@@ -18,10 +18,9 @@ job varchar2(100),
 hiredate date,
 salary number,
 comission number,
-dept_no number
-CONSTRAINT CONS3 FOREIGN KEY (DEPT_NO) REFERENCES DEPARTMENTS(DEPT_NO);
+dept_no number,
+CONSTRAINT CONS3 FOREIGN KEY (DEPT_NO) REFERENCES DEPARTMENTS(DEPT_NO)
 );
-
 
 create table DEPARTMENTS(
 DEPT_NO NUMBER constraint cons2 primary key,
